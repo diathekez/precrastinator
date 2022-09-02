@@ -1,0 +1,626 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+/******************************************
+/* LAYOUT (todos.ejs)
+/*******************************************/
+
+/* header */
+
+#header{
+    width: 100%;
+    text-align: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); 
+    padding-bottom: 50px;     
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+nav h1{
+    color: #fff;
+    font-weight: 600;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fde7b0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+nav a:hover{
+    color: #fff;
+    background: #FBAB7E;
+}
+
+hr{
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.pomoContents{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pomoContainer{
+    background: #fde7b0;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    width: 60%;
+}
+
+.pomoButtons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pomoButtons a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pomoButtons a:hover{
+    background: #FBAB7E;
+    color: #fff;
+}
+
+.pomoContainer h1{
+    font-size: 100px;
+    margin: 15px auto;
+}
+
+.pomoContainer .startBtn{
+    padding: 25px 0;
+}
+
+.pomoContainer .startBtn a{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.pomoContainer .startBtn a:hover{
+    background: #FBAB7E;
+    color: #fff;
+}
+
+.label{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.inputText{
+    padding: 10px 40px 10px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.addButton{
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fde7b0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.addButton:hover{
+    color: #fff;
+    background: #FBAB7E;
+}
+
+.shortLine{
+    height: 2px;
+    margin: 15px auto;
+    width: 25%;
+}
+
+.tasksContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasksContainer{
+    padding: 20px 20px;
+    width: 25%;
+    margin-left: 3%;             
+}
+
+.tasksList{
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.todoItem{
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.del:hover{
+    color: #fff;
+}
+
+/* Footer */
+
+#footer{
+    width: 100%;
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.social-icons-2 a{
+    text-decoration: none;
+    color: white;
+    margin: 0 25px;
+}
+
+.social-icons-2 a:hover{
+    color: #F7CE68 ;
+}
+
+/******************************************
+/* LAYOUT (index.ejs)
+/*******************************************/
+
+#indexHeader{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); 
+}
+
+.indexContainer{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.indexContainer h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.indexContainer p{
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.indexContainer a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: #fde7b0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.indexContainer a:hover{
+    color: #fff;
+    background: #FBAB7E;
+}
+
+img{
+    margin: 20px auto;
+}
+
+/* LAYOUT (NEW TODO.ejs) */
+/******************************************
+/* header */
+
+/* #header{
+    width: 100%;
+    text-align: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); 
+    padding-bottom: 50px;     
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+nav h1{
+    color: #fff;
+    font-weight: 600;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fde7b0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+nav a:hover{
+    color: #fff;
+    background: #FBAB7E;
+}
+
+hr{
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.pomoContents{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pomoContainer{
+    background: #fde7b0;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    width: 60%;
+}
+
+.pomoButtons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pomoButtons a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pomoButtons a:hover{
+    background: #FBAB7E;
+    color: #fff;
+}
+
+.pomoContainer h1{
+    font-size: 100px;
+    margin: 15px auto;
+}
+
+.pomoContainer .startBtn{
+    padding: 25px 0;
+}
+
+.pomoContainer .startBtn a{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.pomoContainer .startBtn a:hover{
+    background: #FBAB7E;
+    color: #fff;
+}
+
+.label{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.inputText{
+    padding: 10px 40px 10px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.addButton{
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fde7b0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.addButton:hover{
+    color: #fff;
+    background: #FBAB7E;
+}
+
+.shortLine{
+    height: 2px;
+    margin: 15px auto;
+    width: 25%;
+}
+
+.tasksContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasksContainer{
+    padding: 20px 20px;
+    width: 25%;
+    margin-left: 3%;             
+}
+
+.tasksList{
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.todoItem{
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.del:hover{
+    color: #fff;
+} */
+
+/* Footer */
+
+/* #footer{
+    width: 100%;
+    padding: 50px 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.social-icons-2 a{
+    text-decoration: none;
+    color: white;
+    margin: 0 25px;
+}
+
+.social-icons-2 a:hover{
+    color: #F7CE68 ;
+} */
+
+
+
+/* ******************************************
+LAYOUT (login.ejs)
+****************************************** */
+
+#login{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); 
+}
+
+.loginContainer{
+    padding: 30px;
+}
+
+.titles{
+    text-align: center;
+}
+
+.titles h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+.titles h3{
+    color: #000;
+    margin: 25px auto;
+}
+
+.titles p{
+    margin-bottom: 25px;
+}
+
+.loginContainer form{
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px 15px 20px 15px;
+}
+
+.loginContainer form label{
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.loginContainer form input{
+    margin-bottom: 15px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.loginContainer form .loginBtn{
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.loginContainer form .loginBtn:hover{
+    background: #000;
+}
+
+.register{
+    text-align: center;
+}
+
+.register h4{
+    color: #000;
+    margin: 15px auto;
+}
+
+.register a{
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ******************************************
+LAYOUT (signup.ejs)
+****************************************** */
+
+#signupPage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.signupContainer{
+    padding: 30px;
+}
+
+.signupTitles{
+    text-align: center;
+}
+
+.signupTitles h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+.signupTitles h3{
+    color: #000;
+    margin: 25px auto;
+}
+
+.signupTitles p{
+    margin-bottom: 25px;
+}
+
+.signupContainer form{
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px 15px 20px 15px;
+}
+
+.signupContainer form label{
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.signupContainer form input{
+    margin-bottom: 15px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.signupContainer form .signupBtn{
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.signupContainer form .signupBtn:hover{
+    background: #000;
+}
+
+.loginDirect{
+    text-align: center;
+}
+
+.loginDirect h4{
+    color: #000;
+    margin: 15px auto;
+}
+
+.loginDirect a{
+    color: #fff;
+    font-weight: 400;
+}
