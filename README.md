@@ -2,7 +2,7 @@
 
 A full-stack app to boost productivity by enabling users to create a list of tasks that they can finish in pomodoro intervals. It's built using the MVC architecture with auth implemented for user creation and personalization.
 
-**Link to project:** http://not-ready-yet.com/
+**Link to project:** https://precrastinator.herokuapp.com/
 
 ![work in progress](https://imgs.search.brave.com/0RYP9WzwBl9VF-w1mu4xTPEzxYpL7zDurgWDsO506bs/rs:fit:900:819:1/g:ce/aHR0cHM6Ly93d3cu/YWxsd29yc2hpcC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDYvYmlnc3Rv/Y2stV29yay1Jbi1Q/cm9ncmVzcy1Db25j/ZXB0LTczNTY5MDkx/LmpwZw)
 
