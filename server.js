@@ -40,6 +40,14 @@ app.use(flash())
   
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
+
+
+app.get('/test',async (request, response)=>{
+ 
+  response.render('test.ejs',)
+
+})
+
  
 app.listen(process.env.PORT, ()=>{
     console.log('Server is running, you better catch it!')
