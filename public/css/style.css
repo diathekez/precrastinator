@@ -4,13 +4,14 @@
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 /* Box Model Hack */
 * {
      box-sizing: border-box;
      margin: 0;
-     padding: 0;
-     font-family: 'Roboto', sans-serif;
+     /* padding: 0; */
+     font-family: 'Comfortaa', sans-serif;
 }
 
 /******************************************
@@ -215,6 +216,11 @@ hr{
 #footer div span a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+}
+
+#footer h4 span{
+    color: red;
 }
 
 /******************************************
@@ -272,6 +278,24 @@ img{
 
 .indexImage h1{
     margin: 10px auto;
+}
+
+#readMe{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.readMeContainer{
+    width: 35%;
+    padding-top: 40px;
+}
+
+.readMeContainer > h1, h2, p, li{
+    margin-bottom: 15px;
 }
 
 /* ******************************************
@@ -438,6 +462,28 @@ LAYOUT (signup.ejs)
 .loginDirect a{
     color: #fff;
     font-weight: 400;
+}
+
+.bigTitle {
+    font-size: 50px;
+    color: #fbab7e;
+}
+
+.smallerTitle {
+    color: #f9c071;
+}
+
+.lightBlack {
+    color: #333;
+}
+
+.darkOrange {
+    color: #fbab7e;
+}
+
+.heroTitle {
+    font-size: 50px;
+    color: #ffffff;
 }
 
 /* ******************************************
