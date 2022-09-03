@@ -477,6 +477,10 @@ LAYOUT (signup.ejs)
     color: #333;
 }
 
+.lightBlack a{
+    color: #333;
+}
+
 .darkOrange {
     color: #fbab7e;
 }
