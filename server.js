@@ -49,6 +49,8 @@ app.get('/test',async (request, response)=>{
 })
 
  
-app.listen(process.env.PORT || PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Server is running, you better catch it!')
-})    
+})
+
+// app.listen(process.env.PORT || PORT, ()
