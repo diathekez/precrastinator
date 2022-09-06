@@ -33,21 +33,26 @@
 
         <div class="pomoContents">
             <div class="pomoContainer">
-                <div class="pomoButtons">
-                    <!-- Add mainEventListener JS function to change background color -->
-                    <a href="#">Precrastinate</a>
-                    <a href="#">Short Break</a>
-                    <a href="#">Long Break</a>
-                </div>
-
-                <h1 id="timer">25:00</h1>
-                <!-- Add mainEventListener JS function to start timer count down-->
-                <div class="startBtn">
-                    <a href="#">START</a>
-                </div>
-
+              <div class="pomoButtons" id="js-mode-buttons">
+                <!-- Add mainEventListener JS function to change background color -->
+                <a data-mode="pomodoro" href="#" class="active">Precrastinate </a>
+                <a data-mode="shortBreak" href="#">Short Break</a>
+                <a data-mode="longBreak" href="#">Long Break</a>
+              </div>
+    
+              <div class="clock" id="js-clock">
+                <h1>
+                  <span id="js-minutes">25</span>
+                  <span class="separator">:</span>
+                  <span id="js-seconds">00</span>
+                </h1>
+              </div>
+              <!-- Add mainEventListener JS function to start timer count down-->
+              <div class="startBtn">
+                <a id="startBtn" data-action="start" href="#">START</a>
+              </div>
             </div>
-        </div>
+          </div>
 
 
         <form action="/todos/createTodo" method='POST'>
@@ -97,6 +102,7 @@
         <h3>Designed and Built by 100Devs Team</h3>
     </footer>
 
+    <!-- <script src="js/timerManager.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 </html>
