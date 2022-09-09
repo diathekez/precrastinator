@@ -4,7 +4,7 @@ A full-stack app to boost productivity by enabling users to create a list of tas
 
 **Link to project:** https://precrastinator.herokuapp.com/
 
-![work in progress](https://imgs.search.brave.com/0RYP9WzwBl9VF-w1mu4xTPEzxYpL7zDurgWDsO506bs/rs:fit:900:819:1/g:ce/aHR0cHM6Ly93d3cu/YWxsd29yc2hpcC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDYvYmlnc3Rv/Y2stV29yay1Jbi1Q/cm9ncmVzcy1Db25j/ZXB0LTczNTY5MDkx/LmpwZw)
+![Precrastinator](https://raw.githubusercontent.com/diathekez/precrastinator/master/assets/imgs/precrastinator_screenshot.png)
 
 > Feel free to click on that lovely star and fork your own copy 😀
 
