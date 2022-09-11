@@ -11,23 +11,19 @@
 	<script src="https://kit.fontawesome.com/cd1bf23aec.js" crossorigin="anonymous"></script>
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todoTest.css">
 </head>
 
 <body>
-
-    <!-- Section -->
-    
-    <section>
-        <h1> Time Loading Bar </h1>
-    </section>
+    <progress id="js-progress" value="0"></progress>
+    <div class="progress-bar"></div>
     
     <!-- Header -->
 
     <header class="container" id="header">
         <nav>
             <h1> <i class="fas fa-stopwatch"></i> Precrastinator</h1>
-            <a href="/logout"> Logout</a>
+            <a href="/logout"> <i class="far fa-user-circle"></i> Logout</a>
         </nav>
         <hr>
 
@@ -54,7 +50,6 @@
             </div>
           </div>
 
-
         <form action="/todos/createTodo" method='POST'>
             <label for="todoItem" class="label">Tasks:   </label>
             <input type="text" placeholder="Enter task here" name='todoItem' class="inputText">
@@ -77,32 +72,44 @@
         
         <h2><%= user.userName %> has <%= left %> things left to do.</h2>
 
-
     </header>
+
+    <!-- Section -->
+    
 
     <!-- Footer -->
 
     <footer id="footer">
         <div class="social-icons-2">
-			<span class="hidden">Follow us:</span>
-			<a href="https://www.instagram.com/" target="_blank">
-				<i class="fab fa-instagram"> <span class="hidden">Instagram</span> </i>
-			</a>
-			<a href="https://twitter.com/" target="_blank">
-				<i class="fab fa-twitter"> <span class="hidden">Twitter</span> </i>
-			</a>
-			<a href="https://www.linkedin.com/in/" target="_blank">
-				<i class="fab fa-github"> <span class="hidden">Github</span></i>
-			</a>
-			<a href="https://github.com/" target="_blank">
-				<i class="fab fa-linkedin"> <span class="hidden">Linkedin</span> </i>
-			</a>
-		</div>
+            <span class="hidden">Follow 100Devs:</span>
+            <a href="https://www.twitch.tv/learnwithleon" target="_blank">
+                <i class="fab fa-twitch"> <span class="hidden">Twitch</span> </i>
+            </a>
+            <a href="https://twitter.com/leonnoel" target="_blank">
+                <i class="fab fa-twitter"> <span class="hidden">Twitter</span> </i>
+            </a>
+            <a href="https://github.com/100devs" target="_blank">
+                <i class="fab fa-github"> <span class="hidden">Github</span></i>
+            </a>
+            <a href="https://www.linkedin.com/company/100devs/mycompany/" target="_blank">
+                <i class="fab fa-linkedin"> <span class="hidden">LinkedIn</span> </i>
+            </a>
+        </div>
         <hr>
-        <h3>Designed and Built by 100Devs Team</h3>
+        <h4>Designed and built with <span>&hearts;</span> by:</h4>
+        <div>
+            <span><a href="https://github.com/hodinsay">Din, </a></span>
+            <span><a href="https://github.com/Pablodelao"> Pablo, </a></span>
+            <span><a href="https://github.com/diathekez"> Bryan, </a></span>
+            <span><a href="https://github.com/VellumMoon"> Jesseca. </a></span>
+        </div>
+        <br>
+        <p>© Precrastinator 2022. All Rights Reserved.</p>
     </footer>
 
-    <!-- <script src="js/timerManager.js"></script> -->
-    <script src="js/main.js"></script>
+
+
+    <script src="js/timerManager.js"></script>
+    <script src="js/todoTest.js"></script>
 </body>
 </html>
