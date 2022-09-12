@@ -42,9 +42,9 @@ app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
 
 
-app.get('/test',async (request, response)=>{
+app.get('/app',async (request, response)=>{
  
-  response.render('test.ejs',)
+  response.render('app.ejs',)
 
 })
 
