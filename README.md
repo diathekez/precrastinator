@@ -51,4 +51,3 @@ afterward:
 ## Optimizations
 
 - We decided on a custom CSS solution, though we now realize that using a framework such as Materialize would have been much more efficient and easily replicable.
-- The app requires user creation in order to make task lists, so something we could have done was use localStorage to keep a temporary session in case the user did not want to create an account.
