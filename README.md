@@ -51,3 +51,13 @@ afterward:
 ## Optimizations
 
 - We decided on a custom CSS solution, though we now realize that using a framework such as Materialize would have been much more efficient and easily replicable.
+
+## The Team
+
+[Din](https://github.com/hodinsay)
+
+[Pablo](https://github.com/Pablodelao)
+
+[Jesseca](https://github.com/VellumMoon)
+
+[Bryan](https://github.com/diathekez)
